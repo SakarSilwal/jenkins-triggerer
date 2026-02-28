@@ -26,6 +26,7 @@ pipeline {
             steps {
                 echo '🛠 Building the application...'
                 sh 'echo "Simulating Maven Build..." && sleep 2'
+                sh 'docker ps'
             }
         }
         
